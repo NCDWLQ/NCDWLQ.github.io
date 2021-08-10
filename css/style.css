@@ -1649,6 +1649,7 @@ pre {
   padding: 16px !important;
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
+  background: #333 !important;
 }
 .hljs::-webkit-scrollbar {
   height: 4px;
