@@ -121,9 +121,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
         <a class="title flat-box" target="_self" href='/'>
           
-            <img no-lazy class='logo' src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png'/>
           
           
+            你才到碗里去
           
         </a>
       
@@ -1064,18 +1064,22 @@ function setSearchService() {
 
 
   
-
+	
 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10/build/highlight.min.js"></script>
 
-<script>hljs.initHighlightingOnLoad();</script>
-
-<script>
-volantis.pjax.push(()=>{
-	document.querySelectorAll('pre code').forEach((block) => {
-	  hljs.highlightBlock(block);
-	});
-},"highlightjs")
-</script>
+	<script src="https://cdn.jsdelivr.net/npm/highlightjs-line-numbers.js@2.8.0/dist/highlightjs-line-numbers.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	<script>hljs.initLineNumbersOnLoad({ singleLine: true });</script>
+	
+	<script>
+	volantis.pjax.push(()=>{
+		document.querySelectorAll('pre code').forEach((block) => {
+		  hljs.highlightBlock(block);
+		  hljs.lineNumbersBlock(block, { singleLine: true });
+		});
+	},"highlightjs")
+	</script>
+	
 
 
 
