@@ -1000,14 +1000,14 @@ var loadCSS = function( href, before, media, attributes ){
   }
   function pjax_valine() {
     if(!document.querySelectorAll("#valine_container")[0])return;
-    let pagePlaceholder = pdata.commentPlaceholder || "快来评论吧~";
+    let pagePlaceholder = pdata.commentPlaceholder || "来都来了，不说点什么？";
     let path = pdata.commentPath;
     if (path.length == 0) {
       let defaultPath = '';
       path = defaultPath || decodeURI(window.location.pathname);
     }
     var valine = new Valine();
-    valine.init(Object.assign({"path":null,"placeholder":"快来评论吧~","appId":null,"appKey":null,"meta":["nick","mail","link"],"requiredFields":["nick","mail"],"enableQQ":false,"recordIP":false,"avatar":"robohash","pageSize":10,"lang":"zh-cn","highlight":true,"mathJax":false}, {
+    valine.init(Object.assign({"path":null,"placeholder":"来都来了，不说点什么？","appId":"WaSi6vgEIwsBSQ9bTQ5gm3nI-MdYXbMMI","appKey":"sdA8pHAHi7RvYjBSapejm31X","meta":["nick","mail","link"],"requiredFields":["nick","mail"],"enableQQ":false,"recordIP":false,"avatar":"robohash","pageSize":10,"lang":"zh-cn","highlight":true,"mathJax":false}, {
       el: '#valine_container',
       path: path,
       placeholder: pagePlaceholder,
