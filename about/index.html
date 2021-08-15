@@ -105,7 +105,7 @@ var loadCSS = function( href, before, media, attributes ){
 	ss.onloadcssdefined = onloadcssdefined;
 	onloadcssdefined( loadCB );
 	return ss;
-};</script><script>loadCSS("https://cdn.jsdelivr.net/gh/Linhk1606/fontawesome-cdn@5.13.0/css/all.min.css",window.volantis.loadcss),loadCSS("https://cdn.jsdelivr.net/npm/highlight.js@11.2.0/styles/atom-one-dark.css",window.volantis.loadcss)</script><script src="https://cdn.jsdelivr.net/npm/jquery@3.5/dist/jquery.min.js"></script><script>function pjax_fancybox() {
+};</script><script>loadCSS("https://cdn.jsdelivr.net/gh/NCDWLQ/fontawesome-cdn@master/css/all.min.css",window.volantis.loadcss),loadCSS("https://cdn.jsdelivr.net/npm/highlight.js@11.2.0/styles/atom-one-dark.css",window.volantis.loadcss)</script><script src="https://cdn.jsdelivr.net/npm/jquery@3.5/dist/jquery.min.js"></script><script>function pjax_fancybox() {
     $(".md .gallery").find("img").each(function () { //渲染 fancybox
       var element = document.createElement("a"); // a 标签
       $(element).attr("class", "fancybox");
@@ -289,7 +289,7 @@ var loadCSS = function( href, before, media, attributes ){
 	if (typeof IssuesAPI == "undefined") {
 	  loadIssuesJS();
 	}
-  },"IssuesJS")</script><script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script><script>window.lazyLoadOptions={elements_selector:".lazyload",threshold:0},window.addEventListener("LazyLoad::Initialized",function(n){window.lazyLoadInstance=n.detail.instance},!1),document.addEventListener("DOMContentLoaded",function(){lazyLoadInstance.update()}),document.addEventListener("pjax:complete",function(){lazyLoadInstance.update()})</script><script>window.FPConfig={delay:0,ignoreKeywords:[],maxRPS:5,hoverDelay:25}</script><script defer src="https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"></script><script src="/js/valine.js"></script><script>function emoji(path, idx, ext) {
+  },"IssuesJS")</script><script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script><script>window.lazyLoadOptions={elements_selector:".lazyload",threshold:0},window.addEventListener("LazyLoad::Initialized",function(n){window.lazyLoadInstance=n.detail.instance},!1),document.addEventListener("DOMContentLoaded",function(){lazyLoadInstance.update()}),document.addEventListener("pjax:complete",function(){lazyLoadInstance.update()})</script><script>window.FPConfig={delay:0,ignoreKeywords:[],maxRPS:5,hoverDelay:25}</script><script defer src="https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"></script><script src="https://cdn.jsdelivr.net/npm/valine@1.4/dist/Valine.min.js"></script><script>function emoji(path, idx, ext) {
     return path + "/" + path + "-" + idx + "." + ext;
   }
   var emojiMaps = {};
@@ -317,7 +317,7 @@ var loadCSS = function( href, before, media, attributes ){
       path = defaultPath || decodeURI(window.location.pathname);
     }
     var valine = new Valine();
-    valine.init(Object.assign({"path":null,"placeholder":"来都来了，不说点什么？","appId":"WaSi6vgEIwsBSQ9bTQ5gm3nI-MdYXbMMI","appKey":"sdA8pHAHi7RvYjBSapejm31X","meta":["nick","mail","link"],"requiredFields":["nick","mail"],"enableQQ":false,"recordIP":false,"avatar":"robohash","pageSize":10,"lang":"zh-cn","highlight":true,"mathJax":false}, {
+    valine.init(Object.assign({"path":null,"placeholder":"来都来了，不说点什么？","appId":"WaSi6vgEIwsBSQ9bTQ5gm3nI-MdYXbMMI","appKey":"sdA8pHAHi7RvYjBSapejm31X","meta":["nick","mail","link"],"requiredFields":["nick","mail"],"enableQQ":false,"recordIP":false,"avatar":"robohash","pageSize":10,"lang":"zh-cn","highlight":true,"mathJax":false,"js":"https://cdn.jsdelivr.net/npm/valine@1.4/dist/Valine.min.js"}, {
       el: '#valine_container',
       path: path,
       placeholder: pagePlaceholder,
